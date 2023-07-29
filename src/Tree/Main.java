@@ -16,7 +16,13 @@ public class Main {
         binarySearchTree.insert(27);
 
         System.out.println("Value : " + binarySearchTree.root.right.left.value);
+        System.out.println("Contains: " +binarySearchTree.contains(97));
+        System.out.println("Recursive Contains: " +binarySearchTree.rContains(27));
 
-        System.out.println(binarySearchTree.contains(97));
+        binarySearchTree.rInsert(11);
+        binarySearchTree.rInsert(12);
+        binarySearchTree.rInsert(13);
+
+        System.out.println("Recursive Contains: " +binarySearchTree.rContains(13));
     }
 }
